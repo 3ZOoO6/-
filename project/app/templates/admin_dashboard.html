@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Admin Dashboard</h1>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>Total Users</h3>
+                <p>{{ users }}</p>
+            </div>
+            <div class="metric-card">
+                <h3>Total Texts</h3>
+                <p>{{ texts }}</p>
+            </div>
+        </div>
+        <canvas id="usageChart"></canvas>
+    </div>
+    <script src="/static/js/charts.js"></script>
+</body>
+</html>
